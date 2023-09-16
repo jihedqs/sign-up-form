@@ -1,0 +1,141 @@
+@font-face {
+  font-family: logo-font;
+  src: url(fonts/Norse-Bold.otf);
+}
+body {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+a {
+  color: white;
+}
+
+.content {
+  display: flex;
+  min-height: 100vh;
+}
+.left-side {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  text-align: center;
+  height: 100vh;
+  background-image: url(imgs/pandu-ior-hckbnUpcm6E-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5.5rem;
+  font-family: "logo-font";
+  color: white;
+  margin-top: 20vh;
+  padding: 16px 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.banner img {
+  height: 125px;
+}
+.attribution {
+  font-size: 0.9rem;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+.right-side {
+  flex: 5;
+  background-color: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.right-side p:first-child {
+  margin-top: 0;
+}
+.right-side > p {
+  margin-left: 48px;
+
+  font-size: 1.4rem;
+  font-weight: bold;
+  max-width: 80%;
+  margin-bottom: 33px;
+}
+.inputs > div {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 84px;
+  row-gap: 18px;
+  margin-bottom: 18px;
+}
+.inputs-section {
+  color: black;
+  background-color: white;
+  margin-top: 32px;
+  padding: 16px 30px;
+  margin-left: 0;
+  box-shadow: 0 5px 5px 4px rgba(0, 0, 0, 0.1);
+}
+.inputs-section h3 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.inputs-section input {
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  padding: 4px 8px;
+  width: 100%;
+  font-size: 1rem;
+  margin-right: 32px;
+}
+.inputs-section input:focus-visible {
+  outline: 2px solid #596d48;
+}
+.inputs label {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 7px;
+}
+.pow::after {
+  content: " *";
+  font-weight: bold;
+  color: red;
+}
+input.error {
+    border: 1px solid red;
+}
+.error-message {
+  margin-top: 0;
+  font-size: 0.8rem;
+  color: red;
+}
+button {
+  margin-left: 48px;
+  margin-top: 32px;
+  color: white;
+  background: #596d48;
+  border-radius: 6px;
+  border: none;
+  width: fit-content;
+  padding: 12px 48px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 2px 5px 5px 4px rgba(0, 0, 0, 0.1);
+}
+p.log-in {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 32px;
+}
+.log-in a {
+  color: #596d48;
+  font-weight: bold;
+  text-decoration: none;
+}
